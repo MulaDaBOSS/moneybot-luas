@@ -21,4 +21,4 @@
 ## Acknowledgements
 * [Viper](https://github.com/ViperGMs) [ Lua Developer / Administrator ] 
 * [Rome](https://github.com/romeauthentic) [ Moneybot Owner / Developer ]
-* [Celestial](https://github.com/bestowal) [ Moneybot Co-Owner ]
+* [Celestial](https://github.com/bestowal) [ Moneybot Owner ]
