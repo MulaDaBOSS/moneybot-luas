@@ -19,6 +19,6 @@
 </p>
 
 ## Acknowledgements
-* [Viper](https://github.com/ViperGMs) [Making and updating of the gitbook] 
-* [Rome](https://github.com/romeauthentic) [Moneybot owner/developer]
-* [Celestial](https://github.com/bestowal) [Moneybot co-owner]
+* [Viper](https://github.com/ViperGMs) [Lua Developer / Administrator] 
+* [Rome](https://github.com/romeauthentic) [Moneybot Owner / Developer]
+* [Celestial](https://github.com/bestowal) [Moneybot Co-Owner]
