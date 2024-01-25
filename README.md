@@ -14,7 +14,7 @@
     .
     <a href="https://discord.gg/gbuqD88acd">Moneybot Discord</a>
     .
-    <a href="https://github.com/cowboy/moneybot-luas/issues">Request Lua/Feature</a>
+    <a href="https://github.com/MulaDaBOSS/moneybot-luas/issues">Request Lua/Feature</a>
   </p>
 </p>
 
