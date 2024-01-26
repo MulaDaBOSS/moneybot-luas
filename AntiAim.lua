@@ -1,5 +1,4 @@
 -- local shit
-local PITCH_ANGLES = 0
 local YAW_ANGLES = {-135, -90, -45, 0, 45, 90, 135}
 local lastSecond = user.get_local_time()
 local additional_yaw_angle = 0
@@ -65,28 +64,18 @@ local function adjustYawOffset(offset)
 end
 
 local function sethvhpitch()
-    local l = entity_list.get_local_player()
-    if l then
-        local ent_index = l:get_index()
-        if pr.get_class(ent_index) == 1 then -- scout
-            PITCH_ANGLES = {4, 5}
-        elseif pr.get_class(ent_index) == 3 then -- soldier
-            PITCH_ANGLES = {4, 5}
-        elseif pr.get_class(ent_index) == 7 then -- pyro
-            PITCH_ANGLES = {4, 5}
-        elseif pr.get_class(ent_index) == 4 then -- demoman
-            PITCH_ANGLES = {4, 5}
-        elseif pr.get_class(ent_index) == 6 then -- heavy
-            PITCH_ANGLES = {3, 5}
-        elseif pr.get_class(ent_index) == 9 then -- engineer
-            PITCH_ANGLES = {4, 5}
-        elseif pr.get_class(ent_index) == 5 then -- medic
-            PITCH_ANGLES = {4, 5}
-        elseif pr.get_class(ent_index) == 2 then -- sniper
-            PITCH_ANGLES = {3, 5}
-        elseif pr.get_class(ent_index) == 8 then -- spy
-            PITCH_ANGLES = {4, 5}
-        end
+    local lp = entity_list.get_local_player()
+    
+    if not lp then
+        return
+    end
+
+    local ent_index = lp:get_index()
+    local class = pr.get_class(ent_index)
+    local PITCH_ANGLES = {4, 5}
+
+    if class == 6 or class == 2 then
+        PITCH_ANGLES = {3, 5}
     end
 
     pitchSetting:set(PITCH_ANGLES[math.random(#PITCH_ANGLES)])
@@ -167,10 +156,10 @@ end
 local function main()
     local current_yawdropdown = yawdropdown:get()
     local current_customyawdropdown = customyawdropdown:get()
-    local value = yawdropdown:get()
+    local dropdown = yawdropdown:get()
 
     actualCycle() 
-    setvisibility(value == 2)
+    setvisibility(dropdown == 2)
 
     if current_yawdropdown ~= previous_yawdropdown or current_customyawdropdown ~= previous_customyawdropdown then
         additional_yaw_angle = 0
@@ -179,12 +168,12 @@ local function main()
     end
 
     if client.is_alive() and antiaimEnabled:get() then
-        if value == 0 then
+        if dropdown == 0 then
             setlegitaa()
-        elseif value == 1 then
+        elseif dropdown == 1 then
             sethvhpitch()
             sethvhyaw()
-        elseif value == 2 then
+        elseif dropdown == 2 then
             setotheraa()
         end
     end
