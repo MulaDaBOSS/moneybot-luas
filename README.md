@@ -10,11 +10,11 @@
     <a href="https://moneybot.gitbook.io/money-api/"><strong>Explore the moneybot docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/cowboy/moneybot-luas">View Luas</a>
+    <a href="https://github.com/MulaDaBOSS/moneybot-luas/releases">View Luas</a>
     .
     <a href="https://discord.gg/gbuqD88acd">Moneybot Discord</a>
     .
-    <a href="https://github.com/cowboy/moneybot-luas/issues">Request Lua/Feature</a>
+    <a href="https://github.com/MulaDaBOSS/moneybot-luas/issues">Request Lua/Feature</a>
   </p>
 </p>
 
