@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/cowboy/moneybot-luas">
-    <img src="https://cdn.discordapp.com/attachments/1162826079204016301/1199309179630915644/image-removebg-preview_1.png?ex=65f03736&is=65ddc236&hm=713dca85c54c479ec94611eca76da0d721d095e649b1b4572286b9397998ecb4&" alt="Logo" width="350" height="100">
+    <img src="https://cdn.discordapp.com/attachments/1162826079204016301/1243592166987661363/image-removebg-preview.png?ex=665208f5&is=6650b775&hm=8e0fe51e3eb26ddf13170b8f93ce11c503d206e1df74039d8077a3b4f5ae602e&" alt="Logo" width="350" height="100">
   </a>
 
   <h3 align="center">All currently released luas</h3>
